@@ -6423,6 +6423,282 @@ blockquote.pullquote.right {
 .read-mode #article-container .note .note-icon {
   color: var(--font-color);
 }
+/* 夜间模式： */
+[data-theme="dark"]
+  #aside-content .card-widget{
+      background: rgba(0, 0, 0, 0.5)!important;
+    }
+[data-theme="dark"]
+  div#post{
+    background: rgba(0, 0, 0, 0.5)!important;
+    }
+
+[data-theme="dark"]
+  div#page{
+    background: rgba(0, 0, 0, 0.5)!important;
+    }
+
+[data-theme="dark"]
+  div#category{
+    background: rgba(0, 0, 0, 0.5)!important;
+    }
+
+[data-theme="dark"]
+  div#tag{
+    background: rgba(0, 0, 0, 0.5)!important;
+    }
+
+[data-theme="dark"]
+  div#archive{
+    background: rgba(0, 0, 0, 0.5)!important;
+    }
+
+/* 阅读模式： */
+
+.read-mode #aside-content .card-widget{
+      background: rgba(158, 204, 171, 0.5)!important;
+    }
+.read-mode div#post{
+    background: rgba(158, 204, 171, 0.5)!important;
+    }
+.read-mode div#page{
+    background: rgba(158, 204, 171, 0.5)!important;
+    }
+.read-mode div#category{
+    background: rgba(158, 204, 171, 0.5)!important;
+    }
+.read-mode div#tag{
+    background: rgba(158, 204, 171, 0.5)!important;
+    }
+.read-mode div#archive{
+    background: rgba(158, 204, 171, 0.5)!important;
+    }
+
+/* 夜间模式下的阅读模式： */
+[data-theme="dark"]
+  .read-mode #aside-content .card-widget{
+        background: rgba(0, 0, 0, 0.5)!important;
+        color: #ffffff;
+      }
+[data-theme="dark"]
+    .read-mode div#post{
+      background: rgba(0, 0, 0, 0.5)!important;
+      color: #ffffff;
+      }
+
+[data-theme="dark"]
+    .read-mode div#page{
+      background: rgba(0, 0, 0, 0.5)!important;
+      color: #ffffff;
+      }
+
+[data-theme="dark"]
+    .read-mode div#category{
+       background: rgba(0, 0, 0, 0.5)!important;
+       color: #ffffff;
+       }
+
+[data-theme="dark"]
+    .read-mode div#tag{
+        background: rgba(0, 0, 0, 0.5)!important;
+        color: #ffffff;
+        }
+[data-theme="dark"]
+  .read-mode div#archive{
+        background: rgba(0, 0, 0, 0.5)!important;
+        color: #ffffff;
+      }
+
+div#post-comment.fixedcomment {
+    position: fixed;
+    top: 0;
+    width: 60%;
+    right: 0;
+    padding: 25px 30px 20px 20px;
+    height: 100vh;
+    overflow: scroll;
+    z-index: 90;
+    background: rgba(222, 222, 222, 0.95);
+    box-shadow:3px 2px 14px #464340;
+    animation: fixedright 0.5s linear;
+}
+div#post-comment.fixedcomment::-webkit-scrollbar {
+width: 0;
+}
+div#quit-board{
+  display: none;
+}
+div#quit-board.fixedcomment {
+  position: fixed;
+  display:block!important;
+  left: 0;
+  top: 0;
+  width: 40%;
+  height: 100vh;
+  z-index: 89!important;
+  background: rgba(25,25,25,0.3);
+  filter: blur(4px) !important;
+  animation: fixedleft 0.5s linear;
+}
+/*手机端样式适配*/
+@media screen and (max-width: 768px) {
+  div#post-comment.fixedcomment {
+      width: 90%;
+      right: 0;
+  }
+  div#quit-board.fixedcomment {
+    width: 10%;
+  }
+}
+/*动画效果*/
+@keyframes fixedright {
+  from {right:-50%;}
+  to {right:0;}
+}
+@keyframes fixedleft {
+  from {left:-50%;}
+  to {left:0;}
+}
+/* 夜间模式匹配 */
+[data-theme="dark"]
+  div#post-comment.fixedcomment {
+      background: rgba(35, 35, 35, 0.95);
+      box-shadow:3px 2px 12px #90a1a4;
+  }
+[data-theme="dark"]
+  div#quit-board.fixedcomment {
+    background: rgba(147, 146, 128, 0.3);
+  }
+
+/* 导入谷歌字体 */
+/* @import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap'); */
+
+/* 本地字体导入 */
+
+/* Akilarの糖果屋字体 */
+@font-face {
+    font-family: 'ZhuZiAYuanJWD';
+    src: url('/fonts/ZhuZiAYuanJWD/ZhuZiAYuanJWD.ttf');
+    font-display: swap;
+}
+
+/* 我在星野深处等你 */
+@font-face {
+    font-family: 'WoZaiXingYeShenChuDengNi';
+    src: url('/fonts/WoZaiXingYeShenChuDengNi/WoZaiXingYeShenChuDengNi.ttf');
+    font-display: swap;
+}
+
+
+/* 甜甜圈海报字体 */
+@font-face {
+  font-family: 'CandyHome'; /* 字体名自定义即可 */
+  src: url('/fonts/CandyHome/CandyHome.ttf'); /* 字体文件路径 */
+  font-display: swap;
+}
+
+
+/* 字体样式应用 */
+
+
+/* 个人签名 */
+.player_description {
+    font-family: WoZaiXingYeShenChuDengNi;
+    font-style: italic;
+    color: rgb(52, 156, 235);
+}
+
+/* 标题 */
+h1#site-title, a.article-title, a.blog-slider__title, a.categoryBar-list-link, h1.post-title {
+    font-family: Candyhome;
+}
+
+/* 阿里云图标库 */
+svg.icon {
+   width: 1em; height: 1em;
+   /* width和height定义图标的默认宽度和高度*/
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+}
+
+
+/* 底部aplayer美化 */
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+  left: -66px !important;
+  /* 默认情况下缩进左侧66px，只留一点箭头部分 */
+}
+
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+  left: 0 !important;
+  /* 鼠标悬停是左侧缩进归零，完全显示按钮 */
+}
+
+
+/* 卡片高度调整 */
+#recent-posts > .recent-post-item {
+    height: 15em !important;
+}
+
+/* 首页文章卡片 */
+#recent-posts > .recent-post-item{
+  background:rgba(255, 255, 255, 0.9);
+}
+/* 首页侧栏卡片 */
+.card-widget{
+background:rgba(255, 255, 255, 0.9)!important;
+}
+/* 文章页面正文背景 */
+div#post{
+background: rgba(255, 255, 255, 0.9);
+}
+/* 分页页面 */
+div#page{
+background: rgba(255, 255, 255, 0.9);
+}
+/* 归档页面 */
+div#archive{
+background: rgba(255, 255, 255, 0.9);
+}
+/* 标签页面 */
+div#tag{
+background: rgba(255, 255, 255, 0.9);
+}
+/* 分类页面 */
+div#category{
+background: rgba(255, 255, 255, 0.9);
+}
+/* opacity定义的是全局的透明度，会影响添加该属性的页面元素及其下属元素 */
+#footer{
+  opacity: 0.5;
+}
+/* 页脚透明 */
+#footer{
+  background: transparent!important;
+}
+/* 页脚黑色透明玻璃效果移除 */
+#footer::before{
+    background: transparent!important;
+  }
+/* 头图透明 */
+#page-header{
+  background: transparent!important;
+}
+/*top-img黑色透明玻璃效果移除，不建议加，除非你执着于完全一图流或者背景图对比色明显 */
+#page-header.post-bg:before {
+  background-color: transparent!important;
+}
+/*夜间模式伪类遮罩层透明*/
+[data-theme="dark"]
+  #footer::before{
+      background: transparent!important;
+    }
+[data-theme="dark"]
+  #page-header::before{
+    background: transparent!important;
+    }
+
 /* SAOUI字体精简包，仅73KB */
 /* @font-face{
   font-family: 'SAOUI';
@@ -6526,284 +6802,6 @@ blockquote.pullquote.right {
 [data-theme="dark"] .item-headline:before {
   background: rgba(255,255,255,0.9);
 }
-
-/* 夜间模式或阅读模式修改 */
-
-/* 夜间模式： */
-[data-theme="dark"]
-  #aside-content .card-widget{
-      background: rgba(0, 0, 0, 0.5)!important;
-    }
-[data-theme="dark"]
-  div#post{
-    background: rgba(0, 0, 0, 0.5)!important;
-    }
-
-[data-theme="dark"]
-  div#page{
-    background: rgba(0, 0, 0, 0.5)!important;
-    }
-
-[data-theme="dark"]
-  div#category{
-    background: rgba(0, 0, 0, 0.5)!important;
-    }
-
-[data-theme="dark"]
-  div#tag{
-    background: rgba(0, 0, 0, 0.5)!important;
-    }
-
-[data-theme="dark"]
-  div#archive{
-    background: rgba(0, 0, 0, 0.5)!important;
-    }
-
-/* 阅读模式： */
-
-.read-mode #aside-content .card-widget{
-      background: rgba(158, 204, 171, 0.5)!important;
-    }
-.read-mode div#post{
-    background: rgba(158, 204, 171, 0.5)!important;
-    }
-.read-mode div#page{
-    background: rgba(158, 204, 171, 0.5)!important;
-    }
-.read-mode div#category{
-    background: rgba(158, 204, 171, 0.5)!important;
-    }
-.read-mode div#tag{
-    background: rgba(158, 204, 171, 0.5)!important;
-    }
-.read-mode div#archive{
-    background: rgba(158, 204, 171, 0.5)!important;
-    }
-
-/* 夜间模式下的阅读模式： */
-[data-theme="dark"]
-  .read-mode #aside-content .card-widget{
-        background: rgba(0, 0, 0, 0.5)!important;
-        color: #ffffff;
-      }
-[data-theme="dark"]
-    .read-mode div#post{
-      background: rgba(0, 0, 0, 0.5)!important;
-      color: #ffffff;
-      }
-
-[data-theme="dark"]
-    .read-mode div#page{
-      background: rgba(0, 0, 0, 0.5)!important;
-      color: #ffffff;
-      }
-
-[data-theme="dark"]
-    .read-mode div#category{
-       background: rgba(0, 0, 0, 0.5)!important;
-       color: #ffffff;
-       }
-
-[data-theme="dark"]
-    .read-mode div#tag{
-        background: rgba(0, 0, 0, 0.5)!important;
-        color: #ffffff;
-        }
-[data-theme="dark"]
-  .read-mode div#archive{
-        background: rgba(0, 0, 0, 0.5)!important;
-        color: #ffffff;
-      }
-
-/* 首页文章卡片 */
-#recent-posts > .recent-post-item{
-  background:rgba(255, 255, 255, 0.9);
-}
-/* 首页侧栏卡片 */
-.card-widget{
-background:rgba(255, 255, 255, 0.9)!important;
-}
-/* 文章页面正文背景 */
-div#post{
-background: rgba(255, 255, 255, 0.9);
-}
-/* 分页页面 */
-div#page{
-background: rgba(255, 255, 255, 0.9);
-}
-/* 归档页面 */
-div#archive{
-background: rgba(255, 255, 255, 0.9);
-}
-/* 标签页面 */
-div#tag{
-background: rgba(255, 255, 255, 0.9);
-}
-/* 分类页面 */
-div#category{
-background: rgba(255, 255, 255, 0.9);
-}
-/* opacity定义的是全局的透明度，会影响添加该属性的页面元素及其下属元素 */
-#footer{
-  opacity: 0.5;
-}
-/* 页脚透明 */
-#footer{
-  background: transparent!important;
-}
-/* 页脚黑色透明玻璃效果移除 */
-#footer::before{
-    background: transparent!important;
-  }
-/* 头图透明 */
-#page-header{
-  background: transparent!important;
-}
-/*top-img黑色透明玻璃效果移除，不建议加，除非你执着于完全一图流或者背景图对比色明显 */
-#page-header.post-bg:before {
-  background-color: transparent!important;
-}
-/*夜间模式伪类遮罩层透明*/
-[data-theme="dark"]
-  #footer::before{
-      background: transparent!important;
-    }
-[data-theme="dark"]
-  #page-header::before{
-    background: transparent!important;
-    }
-
-
-/* 底部aplayer美化 */
-.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-  left: -66px !important;
-  /* 默认情况下缩进左侧66px，只留一点箭头部分 */
-}
-
-.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-  left: 0 !important;
-  /* 鼠标悬停是左侧缩进归零，完全显示按钮 */
-}
-
-
-/* 卡片高度调整 */
-#recent-posts > .recent-post-item {
-    height: 15em !important;
-}
-
-/* 阿里云图标库 */
-svg.icon {
-   width: 1em; height: 1em;
-   /* width和height定义图标的默认宽度和高度*/
-   vertical-align: -0.15em;
-   fill: currentColor;
-   overflow: hidden;
-}
-
-/* 导入谷歌字体 */
-/* @import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap'); */
-
-/* 本地字体导入 */
-
-/* Akilarの糖果屋字体 */
-@font-face {
-    font-family: 'ZhuZiAYuanJWD';
-    src: url('/fonts/ZhuZiAYuanJWD/ZhuZiAYuanJWD.ttf');
-    font-display: swap;
-}
-
-/* 我在星野深处等你 */
-@font-face {
-    font-family: 'WoZaiXingYeShenChuDengNi';
-    src: url('/fonts/WoZaiXingYeShenChuDengNi/WoZaiXingYeShenChuDengNi.ttf');
-    font-display: swap;
-}
-
-
-/* 甜甜圈海报字体 */
-@font-face {
-  font-family: 'CandyHome'; /* 字体名自定义即可 */
-  src: url('/fonts/CandyHome/CandyHome.ttf'); /* 字体文件路径 */
-  font-display: swap;
-}
-
-
-/* 字体样式应用 */
-
-
-/* 个人签名 */
-.player_description {
-    font-family: WoZaiXingYeShenChuDengNi;
-    font-style: italic;
-    color: rgb(52, 156, 235);
-}
-
-/* 标题 */
-h1#site-title, a.article-title, a.blog-slider__title, a.categoryBar-list-link, h1.post-title {
-    font-family: Candyhome;
-}
-
-div#post-comment.fixedcomment {
-    position: fixed;
-    top: 0;
-    width: 60%;
-    right: 0;
-    padding: 25px 30px 20px 20px;
-    height: 100vh;
-    overflow: scroll;
-    z-index: 90;
-    background: rgba(222, 222, 222, 0.95);
-    box-shadow:3px 2px 14px #464340;
-    animation: fixedright 0.5s linear;
-}
-div#post-comment.fixedcomment::-webkit-scrollbar {
-width: 0;
-}
-div#quit-board{
-  display: none;
-}
-div#quit-board.fixedcomment {
-  position: fixed;
-  display:block!important;
-  left: 0;
-  top: 0;
-  width: 40%;
-  height: 100vh;
-  z-index: 89!important;
-  background: rgba(25,25,25,0.3);
-  filter: blur(4px) !important;
-  animation: fixedleft 0.5s linear;
-}
-/*手机端样式适配*/
-@media screen and (max-width: 768px) {
-  div#post-comment.fixedcomment {
-      width: 90%;
-      right: 0;
-  }
-  div#quit-board.fixedcomment {
-    width: 10%;
-  }
-}
-/*动画效果*/
-@keyframes fixedright {
-  from {right:-50%;}
-  to {right:0;}
-}
-@keyframes fixedleft {
-  from {left:-50%;}
-  to {left:0;}
-}
-/* 夜间模式匹配 */
-[data-theme="dark"]
-  div#post-comment.fixedcomment {
-      background: rgba(35, 35, 35, 0.95);
-      box-shadow:3px 2px 12px #90a1a4;
-  }
-[data-theme="dark"]
-  div#quit-board.fixedcomment {
-    background: rgba(147, 146, 128, 0.3);
-  }
 
 /* 自定义twikoo评论输入框高度 */
 .tk-input[data-v-619b4c52] .el-textarea__inner {
