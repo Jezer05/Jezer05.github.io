@@ -6632,7 +6632,7 @@ svg.icon {
 
 /* 卡片高度调整 */
 #recent-posts > .recent-post-item {
-    height: 15em !important;
+    height: 15em;
 }
 
 /* 首页文章卡片 */
