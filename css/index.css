@@ -7153,14 +7153,14 @@ div#quit-board.fixedcomment {
 /* Akilarの糖果屋字体 */
 @font-face {
     font-family: 'ZhuZiAYuanJWD';
-    src: url('/fonts/ZhuZiAYuanJWD/ZhuZiAYuanJWD.ttf');
+    src: url('/fonts/ZhuZiAYuanJWD.ttf');
     font-display: swap;
 }
 
 /* 我在星野深处等你 */
 @font-face {
     font-family: 'WoZaiXingYeShenChuDengNi';
-    src: url('/fonts/WoZaiXingYeShenChuDengNi/WoZaiXingYeShenChuDengNi.ttf');
+    src: url('/fontsdest/WoZaiXingYeShenChuDengNi.ttf');
     font-display: swap;
 }
 
@@ -7168,7 +7168,7 @@ div#quit-board.fixedcomment {
 /* 甜甜圈海报字体 */
 @font-face {
   font-family: 'CandyHome'; /* 字体名自定义即可 */
-  src: url('/fonts/CandyHome/CandyHome.ttf'); /* 字体文件路径 */
+  src: url('/fontsdest/CandyHome.ttf'); /* 字体文件路径 */
   font-display: swap;
 }
 
