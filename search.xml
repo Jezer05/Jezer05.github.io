@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>高等数学知识整理</title>
+      <link href="/posts/8a3f3610/"/>
+      <url>/posts/8a3f3610/</url>
+      
+        <content type="html"><![CDATA[<h2 id="函数-极限-连续"><a class="markdownIt-Anchor" href="#函数-极限-连续"></a> 函数 极限 连续</h2><!--  --><div class="note orange no-icon flat"><div class="tip "><p>函数的概念</p></div><p><img src="https://pic.imgdb.cn/item/6305ebbf16f2c2beb1908110.png" alt="" /></p><details class="folding-tag" cyan><summary> 答案解析 </summary>              <div class='content'>              <div class="tip cogs"><p>定义域指的是x的取值范围，而不是括号里内容的范围</p></div><p><img src="https://pic.imgdb.cn/item/6305ecce16f2c2beb191481d.png" alt="" /></p>              </div>            </details></div><!--  --><div class="note orange no-icon flat"><div class="tip "><p>函数的有界性</p></div><p><img src="https://pic.imgdb.cn/item/6305ee5916f2c2beb1924766.png" alt="" /></p><details class="folding-tag" cyan><summary> 答案解析 </summary>              <div class='content'>              <p><img src="https://pic.imgdb.cn/item/6305ee6d16f2c2beb1925c87.png" alt="" /></p>              </div>            </details></div><!--  --><div class="note orange no-icon flat"><div class="tip "><p>极限的保号性</p></div><p><img src="https://pic.imgdb.cn/item/6305eeee16f2c2beb192b72f.png" alt="" /></p><details class="folding-tag" cyan><summary> 答案解析 </summary>              <div class='content'>              <p><img src="https://pic.imgdb.cn/item/6305ef1016f2c2beb192ce3c.png" alt="" /></p>              </div>            </details></div><!--  --><div class="note orange no-icon flat"><div class="tip "><p>函数的奇偶性+函数单调性+变限积分求导+积分中值定理</p></div><p><img src="https://pic.imgdb.cn/item/6305f06b16f2c2beb193b2e5.png" alt="" /></p><details class="folding-tag" cyan><summary> 答案解析 </summary>              <div class='content'>              <p><img src="https://pic.imgdb.cn/item/6305f08816f2c2beb193c9b9.png" alt="" /></p>              </div>            </details></div><!--  --><div class="note orange no-icon flat"><div class="tip "><p>函数的奇偶性</p></div><p><img src="https://pic.imgdb.cn/item/6305f0de16f2c2beb19403fd.png" alt="" /></p><details class="folding-tag" cyan><summary> 答案解析 </summary>              <div class='content'>              <div class="tip cogs"><p>分两步判断奇偶性</p></div>选D              </div>            </details></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 复习整理 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数学 </tag>
+            
+            <tag> 考研 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>卡片添加Wowjs动画</title>
       <link href="/posts/6e7c9628/"/>
       <url>/posts/6e7c9628/</url>
@@ -232,9 +259,9 @@
       
         <tags>
             
-            <tag> WebApp </tag>
-            
             <tag> Java </tag>
+            
+            <tag> WebApp </tag>
             
         </tags>
       
@@ -259,9 +286,9 @@
       
         <tags>
             
-            <tag> WebApp </tag>
-            
             <tag> Java </tag>
+            
+            <tag> WebApp </tag>
             
         </tags>
       
